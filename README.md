@@ -8,3 +8,11 @@
 </br>./foxy_install_aim.sh
 </br>source ~/.bashrc
 # Installing Robocon Gazebo
+</br>cd ~
+</br>mkdir -p robocon_ws/src && cd robocon_ws/src
+</br>git clone https://github.com/pr-db/sim_gazebo_bringup.git -b aim
+</br>cd ~/robocon_ws
+</br>colcon build --packages-select sim_gazebo_bringup --symlink-install
+</br>echo "source /home/$USER/robocon_ws/install/setup.bash" >> ~/.bashrc
+</br>source ~/.bashrc
+</br>ros2 launch sim_gazebo_bringup sim_gazebo.launch.py

@@ -25,12 +25,21 @@
 <h3 display: block;>Installing Robocon Gazebo</h3>
  <ul display:block;style="font-family:verdana">
     <li>cd ~</li>
-    <li>mkdir -p robocon_ws/src && cd robocon_ws/src</li>
-    <li>git clone https://github.com/pr-db/sim_gazebo_bringup.git -b aim</li>
-    <li>cd ~/robocon_ws</li>
+    <li>mkdir -p robows/src && cd robows/src</li>
+    <li>git clone https://github.com/pr-db/sim_gazebo_bringup.git -b master</li>
+    <li>cd ~/robows</li>
     <li>colcon build --packages-select sim_gazebo_bringup --symlink-install</li>
-    <li>echo "source /home/$USER/robocon_ws/install/setup.bash" >> ~/.bashrc</li>
+    <li>echo "source /home/$USER/robows/install/setup.bash" >> ~/.bashrc</li>
     <li>source ~/.bashrc</li>
     <li>ros2 launch sim_gazebo_bringup sim_gazebo.launch.py</li>
    </ul>
+  <p>After running the above command you will be asked to run few commands. Copy them and run them before moving to next step</p>
+
+<h3 display: block;>Running Robocon Simulation</h3>
+  <p> You've successfully installed Robocon Gazebo! For the siulation, run the command below</p>
+ <ul display:block;style="font-family:verdana">
+   <li>ros2 launch sim_gazebo_bringup sim_gazebo.launch.py</li>
+
+
+
 </div>

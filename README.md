@@ -9,10 +9,10 @@
 <div class="installation">
 <h3 display: block;>Installing ROS2</h3>
 <h4>You need to download this file inorder to install the ROS</h4>
-<a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MWeiLnwrIKZJWLFsXhf%2F-MXcfaeFblmznqth_0fk%2F-MXcgSRrBPzq5-K6O-C5%2Ffoxy_install_aim.sh?alt=media&token=2adf3a55-8463-4ff1-890e-67b6d32fe747">Download this file</a>
+<a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MWeiLnwrIKZJWLFsXhf%2F-MXcfaeFblmznqth_0fk%2F-MXcgSRrBPzq5-K6O-C5%2Ffoxy_install_aim.sh?alt=media&token=2adf3a55-8463-4ff1-890e-67b6d32fe747">Click here to download</a>
   <h5>RUN THE FOLLOWING COMMANDS</h5>
 <ul display: block; style="font-family:verdana">
-  <li style="color:blue" >cd ~/Downloads</li>
+  <li>cd ~/Downloads</li>
   <li>chmod a+x foxy_install_aim.sh</li>
   <li>./foxy_install_aim.sh</li>
   <li>source ~/.bashrc</li>
@@ -20,12 +20,14 @@
 </div>
 <div class="robocon">
 <h3 display: block;>Installing Robocon Gazebo</h3>
-</br display: block;>cd ~
-</br display: block;>mkdir -p robocon_ws/src && cd robocon_ws/src
-</br display: block;>git clone https://github.com/pr-db/sim_gazebo_bringup.git -b aim
-</br display: block;>cd ~/robocon_ws
-</br display: block;>colcon build --packages-select sim_gazebo_bringup --symlink-install
-</br display: block;>echo "source /home/$USER/robocon_ws/install/setup.bash" >> ~/.bashrc
-</br display: block;>source ~/.bashrc
-</br display: block;>ros2 launch sim_gazebo_bringup sim_gazebo.launch.py
+ <ul display:block;style="font-family:verdana">
+    <li>cd ~</li>
+    <li>mkdir -p robocon_ws/src && cd robocon_ws/src</li>
+    <li>git clone https://github.com/pr-db/sim_gazebo_bringup.git -b aim</li>
+    <li>cd ~/robocon_ws</li>
+    <li>colcon build --packages-select sim_gazebo_bringup --symlink-install</li>
+    <li>echo "source /home/$USER/robocon_ws/install/setup.bash" >> ~/.bashrc</li>
+    <li>source ~/.bashrc</li>
+    <li>ros2 launch sim_gazebo_bringup sim_gazebo.launch.py</li>
+   </ul>
 </div>

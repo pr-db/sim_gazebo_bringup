@@ -3,8 +3,8 @@
 <h3 display: block;>Gazebo</h3>
 <p align="center">
 </br>
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffdeantoni.medium.com%2Fros2-dev-with-gazebo-11-3f1795bba33&psig=AOvVaw1RWwC59Lvx3JzfRE11Z9xA&ust=1628187183726000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCKjD2Jv8l_ICFQAAAAAdAAAAABAS"  width="687" height="319">
-<img src="https://gblobscdn.gitbook.com/assets%2F-MWeiLnwrIKZJWLFsXhf%2F-MXaIxqcmP2grIz5ToTW%2F-MXaND_w1UbqoGHP4VNv%2Fgazebo.png?alt=media&token=a05f7459-89f1-454a-a581-59ea9da22411" width="687" height="319"> 
+<img src="https://miro.medium.com/max/680/1*n4TxKdA4LeMTn95m6ogisQ.png"  width="229" height="106">
+<img src="https://gblobscdn.gitbook.com/assets%2F-MWeiLnwrIKZJWLFsXhf%2F-MXaIxqcmP2grIz5ToTW%2F-MXaND_w1UbqoGHP4VNv%2Fgazebo.png?alt=media&token=a05f7459-89f1-454a-a581-59ea9da22411" width="229" height="106"> 
 
 </p>
 <p>Gazebo is a full-fledged simulation environment that offers the ability to accurately and efficiently simulate populations of robots in complex indoor and outdoor environments. </p>

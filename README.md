@@ -10,9 +10,9 @@
 <h3 display: block;>Installing ROS2</h3>
 <h4>You need to download this file inorder to install the ROS</h4>
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MWeiLnwrIKZJWLFsXhf%2F-MXcfaeFblmznqth_0fk%2F-MXcgSRrBPzq5-K6O-C5%2Ffoxy_install_aim.sh?alt=media&token=2adf3a55-8463-4ff1-890e-67b6d32fe747">Download this file</a>
-</br display: block;>RUN THE FOLLOWING COMMANDS
-<ul display: block; style="color:blue"; style="font-family:verdana">
-  <li >cd ~/Downloads</li>
+  <h5>RUN THE FOLLOWING COMMANDS</h5>
+<ul display: block; style="font-family:verdana">
+  <li style="color:blue" >cd ~/Downloads</li>
   <li>chmod a+x foxy_install_aim.sh</li>
   <li>./foxy_install_aim.sh</li>
   <li>source ~/.bashrc</li>

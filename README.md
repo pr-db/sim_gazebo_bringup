@@ -1,6 +1,6 @@
 <h1>Robocon Gazebo </h1>
 <div class="Gazebo">
-<h3 display: block;>Ros and Gazebo</h3>
+<h2 display: block;>Ros and Gazebo</h2>
 <p align="center">
 </br>
 <img src="https://miro.medium.com/max/680/1*n4TxKdA4LeMTn95m6ogisQ.png"  width="460" height="212">

@@ -1,6 +1,6 @@
 <h1>Robocon Gazebo </h1>
 <div class="gazebo">
-<h3 display: block;>WHY GAZEBO?</h3>
+<h3 display: block;>Gazebo</h3>
 <p align="center">
 </br><img src="https://gblobscdn.gitbook.com/assets%2F-MWeiLnwrIKZJWLFsXhf%2F-MXaIxqcmP2grIz5ToTW%2F-MXaND_w1UbqoGHP4VNv%2Fgazebo.png?alt=media&token=a05f7459-89f1-454a-a581-59ea9da22411" width="687" height="319"> 
 </p>

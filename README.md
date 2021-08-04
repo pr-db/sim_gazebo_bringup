@@ -1,4 +1,4 @@
-<h1>Robocon Gazebo </h1>
+<h1>Robocon Simulation </h1>
 <div class="Gazebo">
 <h2 display: block;>Ros and Gazebo</h2>
 <p align="center">

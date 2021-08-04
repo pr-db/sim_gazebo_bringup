@@ -11,8 +11,7 @@
 </div>
 <div class="installation">
 <h3 display: block;>Installing ROS2 Foxy Fitzroy</h3>
-<h4>Download ROS2 Foxy using the link below</h4>
-<a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MWeiLnwrIKZJWLFsXhf%2F-MXcfaeFblmznqth_0fk%2F-MXcgSRrBPzq5-K6O-C5%2Ffoxy_install_aim.sh?alt=media&token=2adf3a55-8463-4ff1-890e-67b6d32fe747">download</a>
+<a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MWeiLnwrIKZJWLFsXhf%2F-MXcfaeFblmznqth_0fk%2F-MXcgSRrBPzq5-K6O-C5%2Ffoxy_install_aim.sh?alt=media&token=2adf3a55-8463-4ff1-890e-67b6d32fe747">Download ROS2 Foxy</a>
   <p></p>
   <h5>Run the following commands after the download</h5>
 <ul display: block; style="font-family:verdana">

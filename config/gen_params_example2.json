@@ -29,9 +29,9 @@
 					"name": "tii_gazebo"
 				},
 				"gazebo_model_repo_1":{
-					"repo": "git@github.com:rudislabs/nxp_gazebo.git",
+					"repo": "git@github.com:rudislabs/robocon_gazebo.git",
 					"version": "fire_turtle",
-					"name": "nxp_gazebo"
+					"name": "robocon_gazebo"
 				},
 				"gazebo_model_repo_2":{
 					"repo": "git@github.com:osrf/gazebo_models.git",
@@ -72,9 +72,9 @@
 				"build_postfix": "--symlink-install"
 			},
 			"ros2_repo_2":{
-				"repo": "git@github.com:rudislabs/nxp_cup_vision.git",
+				"repo": "git@github.com:pr-db/robocon_vision.git",
 				"version": "main",
-				"build_package": "nxp_cup_vision",
+				"build_package": "robocon_vision",
 				"build_prefix": "--packages-select",
 				"build_postfix": "--symlink-install"
 			}
@@ -123,9 +123,9 @@
 	"nodes": {
 		"ros2_node_0":{
 			"timing": "post-spawn",
-			"package": "nxp_cup_vision",
-			"executable": "nxp_track_vision",
-			"name": "nxp_track_vision_0",
+			"package": "robocon_vision",
+			"executable": "robocon_vision",
+			"name": "robocon_vision_0",
 			"output": "screen",
 			"parameters": [	{"pyramid_down": 2},
 							{"camera_image": "trackImage0"},
@@ -143,10 +143,10 @@
 		}
 	},
 	"world_params": {
-		"gazebo_name": "nxp_gazebo",
+		"gazebo_name": "robocon_gazebo",
 		"generate_world": 0,
 		"generate_params":{
-			"world_name": "nxp_raceway_overpass",
+			"world_name": "robocon_raceway_overpass",
 			"sdf_version": "1.6",
 			"use_spherical_coords": 1,
 			"lat_lon_alt": [39.8039, -84.0606, 244],
@@ -189,7 +189,7 @@
 	},
 	"models": {
 		"model_params_0": {
-			"gazebo_name": "nxp_gazebo",
+			"gazebo_name": "robocon_gazebo",
 			"autopilot_name": "NXP-Autopilot",
 			"rtps_arg": "NotSet",
 			"autopilot_build_type": "px4_sitl_rtps",
@@ -197,7 +197,7 @@
 			"instance": 0,
 			"generate_params":{
 				"controller": "ros2",
-				"base_model": "nxp_cupcar",
+				"base_model": "robocon_car",
 				"sdf_version": 1.6,
 				"mavlink_tcp_port": 4560,
 				"mavlink_udp_port": 14560,

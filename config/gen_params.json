@@ -3,37 +3,32 @@
 		"gazebo": {
 			"gazebo_models": {
 				"gazebo_model_repo_0":{
-					"repo": "git@github.com:rudislabs/nxp_gazebo.git",
-					"version": "aim",
-					"name": "nxp_gazebo"
-				},
-				"gazebo_model_repo_1":{
-					"repo": "git@github.com:osrf/gazebo_models.git",
+					"repo": "git@github.com:pr-db/robocon_gazebo.git",
 					"version": "master",
-					"name": "osrf/models"
+					"name": "robocon_gazebo"
 				}
 			},
 			"gazebo_plugins": {}
 		},
 		"ros2": {
 			"ros2_repo_0":{
-				"repo": "git@github.com:rudislabs/nxp_cup_interfaces.git",
-				"version": "aim",
-				"build_package": "nxp_cup_interfaces",
+				"repo": "git@github.com:pr-db/robocon_interfaces.git",
+				"version": "master",
+				"build_package": "robocon_interfaces",
 				"build_prefix": "--packages-select",
 				"build_postfix": "--symlink-install"
 			},
 			"ros2_repo_1":{
-				"repo": "git@github.com:rudislabs/nxp_cup_vision.git",
-				"version": "aim",
-				"build_package": "nxp_cup_vision",
+				"repo": "git@github.com:pr-db/robocon_vision.git",
+				"version": "master",
+				"build_package": "robocon_vision",
 				"build_prefix": "--packages-select",
 				"build_postfix": "--symlink-install"
 			},
 			"ros2_repo_2":{
-				"repo": "git@github.com:rudislabs/aim_line_follow.git",
+				"repo": "git@github.com:pr-db/track_follow.git",
 				"version": "main",
-				"build_package": "aim_line_follow",
+				"build_package": "track_follow",
 				"build_prefix": "--packages-select",
 				"build_postfix": "--symlink-install"
 			}
@@ -65,9 +60,9 @@
 	"nodes": {
 		"ros2_node_0":{
 			"timing": "post-spawn",
-			"package": "nxp_cup_vision",
-			"executable": "nxp_track_vision",
-			"name": "nxp_track_vision_0",
+			"package": "robocon_vision",
+			"executable": "robocon_vision",
+			"name": "robocon_vision_0",
 			"output": "screen",
 			"parameters": [	{"pyramid_down": 3},
 							{"camera_image": "trackImage0"},
@@ -87,7 +82,7 @@
 		},
 		"ros2_node_2":{
 			"timing": "post-spawn",
-			"package": "aim_line_follow",
+			"package": "track_follow",
 			"executable": "line_follower",
 			"name": "line_follower_0",
 			"output": "screen",
@@ -100,7 +95,7 @@
 		}
 	},
 	"world_params": {
-		"gazebo_name": "nxp_gazebo",
+		"gazebo_name": "robocon_gazebo",
 		"generate_world": 1,
 		"generate_params":{
 			"world_name": "canvas",
@@ -116,8 +111,8 @@
 			"wind_speed": "NotSet",
 			"embedded_models": {
 				"embed_model_0": {
-					"model": "nxp_raceway_overpass",
-					"name": "nxp_raceway_overpass_0",
+					"model": "robocon_raceway_overpass",
+					"name": "robocon_raceway_overpass_0",
 					"pose": "0 0 -0.009 0 0 0"
 				},
 				"embed_model_1": {
@@ -129,7 +124,13 @@
 					"model": "start_point",
 					"name": "start_point_1",
 					"pose": "0.2 0.45 0.09 0 0 0"
-				}
+				},
+				"embed_model_3": {
+					"model": "ground_plane",
+					"name": "ground_plane",
+					"pose": "0.0 0.0 0.0 0 0 0"
+					}
+				
 			},
 			"video_widget": "NotSet",
 			"set_physics": 0,
@@ -140,12 +141,12 @@
 	},
 	"models": {
 		"model_params_0": {
-			"gazebo_name": "nxp_gazebo",
+			"gazebo_name": "robocon_gazebo",
 			"spawn_pose": [0, 0, 0.1, 0, 0, 0],
 			"instance": 0,
 			"generate_params":{
 				"controller": "ros2",
-				"base_model": "nxp_cupcar",
+				"base_model": "robocon_car",
 				"sdf_version": 1.6,
 				"camera_image": "trackImage0",
 				"namespace": "cupcar0",

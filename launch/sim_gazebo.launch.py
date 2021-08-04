@@ -492,14 +492,14 @@ def generate_launch_description():
         if ros2_node["timing"] == "pre-spawn":
             if "remappings" in ros2_node:
                 remappings = [eval(str(ros2_node["remappings"]))]
-                postspawn_node = Node(package=ros2_node["package"],
+                prespawn_node = Node(package=ros2_node["package"],
                     executable=ros2_node["executable"],
                     name=str(ros2_node["name"]), 
                     output=ros2_node["output"],
                     parameters=ros2_node["parameters"],
                     remappings=remappings)
             else:
-                postspawn_node = Node(package=ros2_node["package"],
+                prespawn_node = Node(package=ros2_node["package"],
                     executable=ros2_node["executable"],
                     name=str(ros2_node["name"]), 
                     output=ros2_node["output"],

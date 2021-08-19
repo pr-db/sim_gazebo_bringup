@@ -137,7 +137,7 @@
 	"models": {
 		"model_params_0": {
 			"gazebo_name": "robocon_gazebo",
-			"spawn_pose": [0, 0, 0.1, 0, 0, 0],
+			"spawn_pose": [0, 0, 0, 0, 0, 0],
 			"instance": 0,
 			"generate_params":{
 				"controller": "ros2",

@@ -25,11 +25,11 @@
 <h3 display: block;>Installing Robo Gazebo</h3>
  <ul display:block;style="font-family:verdana">
     <li>cd ~</li>
-    <li>mkdir -p robows/src && cd robows/src</li>
+    <li>mkdir -p ros2ws/src && cd ros2ws/src</li>
     <li>git clone https://github.com/pr-db/sim_gazebo_bringup.git -b mini</li>
-    <li>cd ~/robows</li>
+    <li>cd ~/ros2ws</li>
     <li>colcon build --packages-select sim_gazebo_bringup --symlink-install</li>
-    <li>echo "source /home/$USER/robows/install/setup.bash" >> ~/.bashrc</li>
+    <li>echo "source /home/$USER/ros2ws/install/setup.bash" >> ~/.bashrc</li>
     <li>source ~/.bashrc</li>
     <li>ros2 launch sim_gazebo_bringup sim_gazebo.launch.py</li>
    </ul>

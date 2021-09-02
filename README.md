@@ -26,7 +26,7 @@
  <ul display:block;style="font-family:verdana">
     <li>cd ~</li>
     <li>mkdir -p robows/src && cd robows/src</li>
-    <li>git clone https://github.com/pr-db/sim_gazebo_bringup.git -b master</li>
+    <li>git clone https://github.com/pr-db/sim_gazebo_bringup.git -b mini</li>
     <li>cd ~/robows</li>
     <li>colcon build --packages-select sim_gazebo_bringup --symlink-install</li>
     <li>echo "source /home/$USER/robows/install/setup.bash" >> ~/.bashrc</li>

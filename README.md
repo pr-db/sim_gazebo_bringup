@@ -1,4 +1,4 @@
-<h1>Robocon Simulation </h1>
+<h1>Robo Simulation </h1>
 <div class="Gazebo">
 <h2 display: block;>Ros and Gazebo</h2>
 <p align="center">
@@ -21,8 +21,8 @@
   <li>source ~/.bashrc</li>
 </ul>
 </div>
-<div class="robocon">
-<h3 display: block;>Installing Robocon Gazebo</h3>
+<div class="robo">
+<h3 display: block;>Installing Robo Gazebo</h3>
  <ul display:block;style="font-family:verdana">
     <li>cd ~</li>
     <li>mkdir -p robows/src && cd robows/src</li>
@@ -35,8 +35,8 @@
    </ul>
   <p>After running the above command you will be asked to run few commands. Copy them and run them before moving to next step</p>
 
-<h3 display: block;>Running Robocon Simulation</h3>
-  <p> You've successfully installed Robocon Gazebo! For the siulation, run the command below</p>
+<h3 display: block;>Running Robo Simulation</h3>
+  <p> You've successfully installed Robo Gazebo! For the siulation, run the command below</p>
  <ul display:block;style="font-family:verdana">
    <li>ros2 launch sim_gazebo_bringup sim_gazebo.launch.py</li>
 

@@ -4,8 +4,8 @@
 			"gazebo_models": {
 				"gazebo_model_repo_0":{
 					"repo": "git@github.com:pr-db/robocon_gazebo.git",
-					"version": "master",
-					"name": "robocon_gazebo"
+					"version": "mini",
+					"name": "robo_gazebo"
 				}
 			},
 			"gazebo_plugins": {}
@@ -13,21 +13,21 @@
 		"ros2": {
 			"ros2_repo_0":{
 				"repo": "git@github.com:pr-db/robocon_interfaces.git",
-				"version": "master",
-				"build_package": "robocon_interfaces",
+				"version": "mini",
+				"build_package": "robo_interfaces",
 				"build_prefix": "--packages-select",
 				"build_postfix": "--symlink-install"
 			},
 			"ros2_repo_1":{
 				"repo": "git@github.com:pr-db/robocon_vision.git",
-				"version": "master",
-				"build_package": "robocon_vision",
+				"version": "mini",
+				"build_package": "robo_vision",
 				"build_prefix": "--packages-select",
 				"build_postfix": "--symlink-install"
 			},
 			"ros2_repo_2":{
 				"repo": "git@github.com:pr-db/track_follow.git",
-				"version": "master",
+				"version": "mini",
 				"build_package": "track_follow",
 				"build_prefix": "--packages-select",
 				"build_postfix": "--symlink-install"
@@ -60,9 +60,9 @@
 	"nodes": {
 		"ros2_node_0":{
 			"timing": "post-spawn",
-			"package": "robocon_vision",
-			"executable": "robocon_vision",
-			"name": "robocon_vision_0",
+			"package": "robo_vision",
+			"executable": "robo_vision",
+			"name": "robo_vision_0",
 			"output": "screen",
 			"parameters": [	{"pyramid_down": 3},
 							{"camera_image": "trackImage0"},
@@ -90,7 +90,7 @@
 		}
 	},
 	"world_params": {
-		"gazebo_name": "robocon_gazebo",
+		"gazebo_name": "robo_gazebo",
 		"generate_world": 1,
 		"generate_params":{
 			"world_name": "canvas",
@@ -106,8 +106,8 @@
 			"wind_speed": "NotSet",
 			"embedded_models": {
 				"embed_model_0": {
-					"model": "robocon_raceway_overpass",
-					"name": "robocon_raceway_overpass_0",
+					"model": "robo_raceway_overpass",
+					"name": "robo_raceway_overpass_0",
 					"pose": "0 0 -0.009 0 0 0"
 				},
 				"embed_model_1": {
@@ -136,12 +136,12 @@
 	},
 	"models": {
 		"model_params_0": {
-			"gazebo_name": "robocon_gazebo",
+			"gazebo_name": "robo_gazebo",
 			"spawn_pose": [0, 0, 0, 0, 0, 0],
 			"instance": 0,
 			"generate_params":{
 				"controller": "ros2",
-				"base_model": "robocon_car",
+				"base_model": "robo_car",
 				"sdf_version": 1.6,
 				"camera_image": "trackImage0",
 				"namespace": "cupcar0",
